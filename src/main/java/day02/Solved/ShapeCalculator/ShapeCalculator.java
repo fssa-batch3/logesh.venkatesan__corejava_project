@@ -1,6 +1,7 @@
-package day02.Solved;
+package day02.Solved.ShapeCalculator;
 
 public class ShapeCalculator {
+
 	public double calculateArea(double radius) {
 		return Math.PI * radius * radius;
 	}

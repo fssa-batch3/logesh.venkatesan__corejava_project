@@ -1,12 +1,12 @@
 package day06.Solved;
 import java.util.ArrayList;
-
-
 public class ArrayListWithGenericsDemo {
+
 	public static void main(String[] args) {
 
 		// Store the city names in the List ( use Generics )
-		ArrayList<String> cityList = new ArrayList<String>();
+		ArrayList<String> cityList = new ArrayList();
+		
 		cityList.add("Chennai");
 		cityList.add("Bangalore");
 		cityList.add("Mumbai");

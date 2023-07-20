@@ -1,4 +1,3 @@
-
 package day02.Solved;
 
 public class BankAccount {
@@ -29,17 +28,5 @@ public class BankAccount {
 
 	public void setBalance(double balance) {
 		this.balance = balance;
-	}
-	public static void main(String[] args) {
-		BankAccount BA = new BankAccount();
-		BA.setName("loki");
-		BA.setAccNo("2345678");
-		BA.setBalance(98.768);
-		BA.getBalance();
-		BA.getAccNo();
-		BA.getName();
-		System.out.println("Balance : "+BA.getBalance());
-		System.out.println("Account No : "+BA.getAccNo());
-		System.out.println("Name : "+BA.getName());
 	}
 }

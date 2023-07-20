@@ -1,9 +1,7 @@
 package day06.Solved;
-import java.util.ArrayList;
-
+import java.util.*;
 public class ArrayListDemo {
 
-	// without using generics
 	public static void main(String[] args) {
 
 		// Store the city names in the List
@@ -21,5 +19,4 @@ public class ArrayListDemo {
 		System.out.println(cityList);	// Use of toString method of 'Object' class
 
 	}
-
 }

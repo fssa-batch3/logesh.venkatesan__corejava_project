@@ -1,60 +1,53 @@
 package day02.practice;
-/*Question#1 (For Encapsulation): Create a **User** 
- * class with attribute id, name, password, emailId 
- * and create setters and getters for the same. 
- * Please note no attribute should be available publicly 
- * they should be only be accessible via the setters and getters.*/
-
 
 public class User {
-public String UserName;
-public int UserId;
-public String UserPassword;
-public String Email;
 
-public String getEmail() {
-	return Email;
-}
+	private int id;
+    private String name;
+    private String password;
+    private String emailId;
+    
+    // Getters and setters
+    public int getId() {
+        return id;
+    }
 
-public void setEmail(String email) {
-	Email = email;
-}
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
 
-public String getUserPassword() {
-	return UserPassword;
-}
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getPassword() {
+        return password;
+    }
 
-public void setUserPassword(String userPassword) {
-	UserPassword = userPassword;
-}
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public String getEmailId() {
+        return emailId;
+    }
 
-public int getUserId() {
-	return UserId;
-}
-
-public void setUserId(int userId) {
-	UserId = userId;
-}
-
-public String getUserName() {
-	return UserName;
-}
-
-public void setUserName(String userName) {
-	UserName = userName;
-} 
-
-	public static void main(String[] args) {
-		User user = new User();
-		user.setEmail("Loki@gmail.com");
-		user.setUserId(12345);
-		user.setUserName("Lokesh");
-		user.setUserPassword("loki1234");
-		
-		System.out.println( "UserEmail : "+user.getEmail());
-		System.out.println(  "UserID : "+user.getUserId());
-		System.out.println(  "UserName : "+user.getUserName());
-		System.out.println(  "UserPassword : "+user.getUserPassword());
-	}
-	
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+    
+    public static void main(String args[]) {
+    	User user = new User();
+    	
+    	user.setId(129);
+    	user.setName("Saran");
+    	user.setPassword("Jumanji@2023");
+    	user.setEmailId("saran.selvaraj@fssa.freshworks.com");
+    	
+    	System.out.println("Id : " + user.getId());
+    	System.out.println("Name : " + user.getName());
+    	System.out.println("Password : " + user.getPassword());
+    	System.out.println("Email Id : " + user.getEmailId());
+    }
 }

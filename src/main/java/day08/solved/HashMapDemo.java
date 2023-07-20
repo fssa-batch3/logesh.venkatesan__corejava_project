@@ -1,8 +1,9 @@
 package day08.solved;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class HashMapDemo {
+
 	public static void main(String[] args) {
 
 		// Task: store department name and no of employees working in the department
@@ -15,11 +16,9 @@ public class HashMapDemo {
 		for (String deptName : deptMap.keySet()) {
 
 			Integer count = deptMap.get(deptName);
-			System.out.println("Department Name - " + deptName + " and Employee Count - " + count);
+			System.out.println("Department Name:" + deptName + " and Employee Count :" + count);
 
 		}
-		deptMap.forEach((key,value)-> System.out.println(key+"="+value));
 
 	}
-
 }

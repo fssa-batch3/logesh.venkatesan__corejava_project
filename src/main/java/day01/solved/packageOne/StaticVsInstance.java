@@ -1,4 +1,3 @@
-
 package day01.solved.packageOne;
 
 public class StaticVsInstance {

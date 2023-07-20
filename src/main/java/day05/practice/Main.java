@@ -1,6 +1,6 @@
 package day05.practice;
 
-import day04.practice.Rectangle;
+
 
 //Abstract Polygon class
 abstract class Polygon {

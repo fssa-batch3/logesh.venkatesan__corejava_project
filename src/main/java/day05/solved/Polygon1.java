@@ -6,12 +6,12 @@ public abstract class Polygon1 {
 
 }
 
-public interface Polygon {
+interface Polygon {
 
 	public double area(double a, double b);
 }
 
-public class RightAngledTriangle implements Polygon {
+ class RightAngledTriangle implements Polygon {
 
 	@Override
 	public double area(double a, double b) {
@@ -21,7 +21,7 @@ public class RightAngledTriangle implements Polygon {
 
 }
 
-public class TestInfPolygon {
+ class TestInfPolygon {
 
 	/**
 	 * @param args

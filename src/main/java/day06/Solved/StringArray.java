@@ -1,7 +1,6 @@
 package day06.Solved;
 
 public class StringArray {
-
 	public static void main(String[] args) {
 
 		// How its stored in an normal array
@@ -10,41 +9,41 @@ public class StringArray {
 		cityArr[1] = "Bangalore";
 		cityArr[2] = "Mumbai";
 		
-		
-		
-		
-
 		// Display the city names
-		System.out.println("Initial Output-1:");
 		for (String cityName : cityArr) {
-			System.out.println(cityName);
-		}
-		System.out.println("");
-		
-		cityArr[1]="Kolkata";
-		System.out.println("New Output-1:");
-		for (String cityName : cityArr) {
-			
-			System.out.println(cityName);
-		}
-		System.out.println("");
-		
-		
-		cityArr[3]="Delhi";
-		System.out.println("New Output-2:");
-		for (String cityName : cityArr) {
-			
-			System.out.println(cityName);
+			if(cityName != null) {
+				System.out.println(cityName);				
+			}
 		}
 		
-System.out.println("");
+		System.out.println(" ");
+		cityArr[3] = "Delhi";
 		
-		
-		cityArr[2]=cityArr[3];
-		System.out.println("New Output-3:");
-		for (String cityName : cityArr) {
-			
-			System.out.println(cityName);
+		for (String cityName : cityArr) {		
+			if(cityName != null) {
+				System.out.println(cityName);				
+			}
 		}
-	
-	}}
+		
+		System.out.println(" ");
+		cityArr[1] = "Kolkata";
+		
+		for (String cityName : cityArr) {		
+			if(cityName != null) {
+				System.out.println(cityName);				
+			}
+		}
+		
+		System.out.println(" ");
+		cityArr[2] = null;
+		
+		for (String cityName : cityArr) {		
+			if(cityName != null) {
+				System.out.println(cityName);				
+			}else {
+				System.out.println("null");
+			}
+		}
+	}
+
+}

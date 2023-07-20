@@ -1,7 +1,6 @@
-package day06.Solved;
-import java.util.ArrayList;
-import java.util.List;
 
+package day06.Solved;
+import java.util.*;
 public class CRUDOnList {
 
 	public static void main(String[] args) {
