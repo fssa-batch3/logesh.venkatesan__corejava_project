@@ -8,6 +8,10 @@ public class ArrayList1 {
 	public static class Task {
 		public String taskName;
 		public int priority;
+		public Object getName() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 	}
 
 	public static void main(String[] args) {
