@@ -6,17 +6,17 @@ import java.time.LocalDate;
  *
  **/
 
-class Animal {
+class Animal1 {
 	// Attributes
 	private String name;
 	private int age;
 	private String gender;
 	protected LocalDate dateOfBirth;
 
-	public Animal() {
+	public Animal1() {
 	}
 
-	public Animal(String name) {
+	public Animal1(String name) {
 		System.out.println("Calling Parent Constructor");
 		this.name = name;
 	}
@@ -63,15 +63,15 @@ class Animal {
 	}
 }
 
-class Lion extends Animal {
+class Lion1 extends Animal {
 
 	// Attributes
 	private boolean isBeard;
 
-	public Lion() {
+	public Lion1() {
 	}
 
-	public Lion(String name) {
+	public Lion1(String name) {
 		super(name); // Calling the constructor of Animal class
 		System.out.println("Calling Child Constructor");
 	}
@@ -83,7 +83,7 @@ class Lion extends Animal {
 
 }
 
-class Giraffe extends Animal {
+class Giraffe1 extends Animal {
 	private int height;
 
 }

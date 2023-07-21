@@ -67,7 +67,7 @@ class Animal {
 	}
 }
 
-class Lion extends Animal {
+class Lion extends Animal1 {
 
 	// Attributes
 	private boolean isBeard;
@@ -87,25 +87,25 @@ class Lion extends Animal {
 
 }
 
-class Giraffe extends Animal {
+class Giraffe extends Animal1 {
 	private int height;
 
 }
 
 public class AnimalSolved {
 	public static void main(String[] args) {
-		Lion lion1 = new Lion("Simba");
+		Lion1 lion1 = new Lion1("Simba");
 //		lion1.setName("Simba");
 		lion1.setAge(10); // setAge() method was not defined in Lion; it is inherited from Animal
 		System.out.println(lion1.getName());
 		lion1.speaks();
 		
-		Lion lion2 = new Lion();
+		Lion1 lion2 = new Lion1();
 		lion2.setName("Leo");
 		System.out.println(lion1.getName());
 		lion1.sleeps();
 		
-		Giraffe giraffe1 = new Giraffe();
+		Giraffe1 giraffe1 = new Giraffe1();
 		giraffe1.setName("Jack");
 		System.out.println(giraffe1.getName());
 		giraffe1.sleeps();
