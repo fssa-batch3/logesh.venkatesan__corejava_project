@@ -10,7 +10,7 @@ public class TaskTest {
     @Test
     public void testTaskConstructorAndGetters() {
         // Create a task using the constructor
-        Task task = new Task("Example Task", 3);
+        TaskDAO task = new TaskDAO("Example Task", 3);
 
         // Test the getters
         Assertions.assertEquals("Example Task", task.getTaskName());
@@ -20,7 +20,7 @@ public class TaskTest {
     @Test
     public void testTaskSetters() {
         // Create a task using the constructor
-        Task task = new Task("Task 1", 1);
+        TaskDAO task = new TaskDAO("Task 1", 1);
 
         // Test the setters
         task.setTaskName("Updated Task Name");
@@ -33,7 +33,7 @@ public class TaskTest {
     @Test
     public void testTaskToString() {
         // Create a task using the constructor
-        Task task = new Task("Sample Task", 2);
+        TaskDAO task = new TaskDAO("Sample Task", 2);
 
         // Test the toString() method
         String expectedString = "taskName='Sample Task', priority=2";

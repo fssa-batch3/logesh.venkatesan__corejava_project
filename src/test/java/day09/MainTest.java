@@ -22,13 +22,13 @@ public class MainTest {
                 "3,Task C,2023-07-28"
         );
 
-        List<Task> expected = Arrays.asList(
-                new Task(2, "Task B", LocalDate.parse("2023-07-25", formatter)),
-                new Task(3, "Task C", LocalDate.parse("2023-07-28", formatter)),
-                new Task(1, "Task A", LocalDate.parse("2023-07-30", formatter))
+        List<TaskDAO> expected = Arrays.asList(
+                new TaskDAO(2, "Task B", LocalDate.parse("2023-07-25", formatter)),
+                new TaskDAO(3, "Task C", LocalDate.parse("2023-07-28", formatter)),
+                new TaskDAO(1, "Task A", LocalDate.parse("2023-07-30", formatter))
         );
 
-        List<Task> actual = Main.sortTasks(inputTasks);
+        List<TaskDAO> actual = Main.sortTasks(inputTasks);
 
         assertEquals(expected, actual);
     }

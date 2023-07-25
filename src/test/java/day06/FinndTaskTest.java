@@ -11,10 +11,10 @@ class FindTaskTest {
     
     @Test
     void testFindTaskByName() {
-        ArrayList<Task> tasks = new ArrayList<>();
-        tasks.add(new Task("Coding", 2));
-        tasks.add(new Task("Sleep", 1));
-        tasks.add(new Task("Food", 3));
+        ArrayList<TaskDAO> tasks = new ArrayList<>();
+        tasks.add(new TaskDAO("Coding", 2));
+        tasks.add(new TaskDAO("Sleep", 1));
+        tasks.add(new TaskDAO("Food", 3));
 
         // Test if an existing task is found
         boolean foundTask = FindTask.findTaskByName("Coding", tasks);

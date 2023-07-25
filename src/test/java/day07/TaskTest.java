@@ -11,7 +11,7 @@ public class TaskTest {
     @Test
     public void testTaskConstructorAndGetters() {
         // Create a task using the constructor
-        Task task = new Task("Example Task", 1, "2023-07-22");
+        TaskDAO task = new TaskDAO("Example Task", 1, "2023-07-22");
 
         // Test the getters
         Assertions.assertEquals("Example Task", task.getName());
@@ -22,7 +22,7 @@ public class TaskTest {
     @Test
     public void testTaskToString() {
         // Create a task using the constructor
-        Task task = new Task("Sample Task", 2, "2022-12-31");
+        TaskDAO task = new TaskDAO("Sample Task", 2, "2022-12-31");
 
         // Test the toString() method
         String expectedString = "Task : Sample Task, Deadline :2022-12-31, Id :2";
@@ -31,9 +31,9 @@ public class TaskTest {
 
     @Test
     public void testTaskEqualsAndHashCode() {
-        Task task1 = new Task("Todo", 1, "2023-07-22");
-        Task task2 = new Task("Todo", 1, "2023-07-22");
-        Task task3 = new Task("Sleep", 2, "2015-06-05");
+        TaskDAO task1 = new TaskDAO("Todo", 1, "2023-07-22");
+        TaskDAO task2 = new TaskDAO("Todo", 1, "2023-07-22");
+        TaskDAO task3 = new TaskDAO("Sleep", 2, "2015-06-05");
 
         // Test the equals() method
         Assertions.assertEquals(task1, task2);
