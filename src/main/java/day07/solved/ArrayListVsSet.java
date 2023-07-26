@@ -1,9 +1,8 @@
 package day07.solved;
 
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.HashSet;
 public class ArrayListVsSet {
-
 	public static void main(String[] args) {
 
 		// ArrayList stores duplicates
@@ -16,14 +15,14 @@ public class ArrayListVsSet {
 		System.out.println("Using ArrayList :" + cityNames);
 
 		// Set stores unique elements and ignores duplication
-		TreeSet<String> cityNamesSet = new TreeSet<String>();
+		HashSet<String> cityNamesSet = new HashSet<String>();
 		cityNamesSet.add("Delhi");
 		cityNamesSet.add("Chennai");
 		cityNamesSet.add("Chennai");
 		cityNamesSet.add("Bangalore");
-		cityNamesSet.add("bangalore");
 
 		System.out.println("Using Set :" + cityNamesSet);
 
 	}
+
 }

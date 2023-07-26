@@ -1,6 +1,7 @@
-package day06.Solved;
+package day06.solved;
 
 public class StringArray {
+
 	public static void main(String[] args) {
 
 		// How its stored in an normal array
@@ -12,38 +13,41 @@ public class StringArray {
 		// Display the city names
 		for (String cityName : cityArr) {
 			if(cityName != null) {
-				System.out.println(cityName);				
+				System.out.println(cityName);
 			}
 		}
+		System.out.println("");
 		
-		System.out.println(" ");
+		// adding new city
 		cityArr[3] = "Delhi";
 		
-		for (String cityName : cityArr) {		
-			if(cityName != null) {
-				System.out.println(cityName);				
-			}
+		// Display the city names
+		for (String cityName : cityArr) {
+			System.out.println(cityName);
 		}
+		System.out.println("");
 		
-		System.out.println(" ");
+		//update existing city
 		cityArr[1] = "Kolkata";
 		
-		for (String cityName : cityArr) {		
-			if(cityName != null) {
-				System.out.println(cityName);				
-			}
+		// Display the city names
+		for (String cityName : cityArr) {
+			System.out.println(cityName);
 		}
+		System.out.println("");
 		
-		System.out.println(" ");
+		//delete city2 from array
 		cityArr[2] = null;
 		
-		for (String cityName : cityArr) {		
+
+		// Display the city names
+		for (String cityName : cityArr) {
 			if(cityName != null) {
-				System.out.println(cityName);				
-			}else {
-				System.out.println("null");
+				System.out.println(cityName);
 			}
 		}
 	}
-
 }
+
+
+

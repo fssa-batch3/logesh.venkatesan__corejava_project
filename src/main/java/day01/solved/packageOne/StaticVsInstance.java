@@ -1,4 +1,5 @@
-package day01.solved.packageOne;
+package day01.solved.packageone;
+
 
 public class StaticVsInstance {
 	public static void main(String[] args) {

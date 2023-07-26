@@ -1,22 +1,24 @@
 package day07.solved;
 
-import java.util.*;
+import java.util.TreeSet;
 
 public class TreeSetDemo {
-
-	public static void main(String[] args) {
-
-		// TreeSet sorts the collections
-		TreeSet<String> cityNames = new TreeSet<String>();
-		cityNames.add("Delhi");
-		cityNames.add("Chennai");
-		cityNames.add("Bangalore");
-
-		for (String cityName : cityNames) {
-			System.out.println(cityName);
-		}
-		cityNames.clear();
-		System.out.println(cityNames);
-	}
-
+ 
+    public static void main(String[] args) {
+ 
+        // TreeSet sorts the collections
+        TreeSet<String> cityNames = new TreeSet<String>();
+        cityNames.add("Delhi");
+        cityNames.add("delhi");
+        cityNames.add("Chennai");
+        cityNames.add("Hyderabad");
+        cityNames.add("Bangalore");
+ 
+        for (String cityName : cityNames) {
+            System.out.println(cityName);
+        }
+         
+         
+    }
+ 
 }

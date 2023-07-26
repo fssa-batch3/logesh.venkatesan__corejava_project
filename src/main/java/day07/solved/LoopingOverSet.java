@@ -1,7 +1,8 @@
 package day07.solved;
-import java.util.*;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.HashSet;
 public class LoopingOverSet {
-
 	public static void main(String[] args) {
 
 		Set<String> cityNames = new HashSet<String>();
@@ -9,8 +10,6 @@ public class LoopingOverSet {
 		cityNames.add("Chennai");
 		cityNames.add("Chennai");
 		cityNames.add("Bangalore");
-		cityNames.add("Goa");
-		
 		
 		// Method 1: Using foreach
 		System.out.println("Using foreach:");
@@ -26,4 +25,5 @@ public class LoopingOverSet {
 		}
 
 	}
+
 }

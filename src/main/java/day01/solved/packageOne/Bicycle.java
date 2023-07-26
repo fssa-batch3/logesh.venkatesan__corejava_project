@@ -1,8 +1,8 @@
-package day01.solved.packageOne;
+package day01.solved.packageone;
 
 public class Bicycle {
-	public int speed = 0;
-	public int gear = 0;
+	private int speed = 0;
+	private int gear = 0;
 
 	public int getSpeed() {
 		return speed;

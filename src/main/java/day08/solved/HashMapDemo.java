@@ -1,24 +1,24 @@
 package day08.solved;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapDemo {
 
-	public static void main(String[] args) {
+    public static Map<String, Integer> getDepartmentMap() {
+        HashMap<String, Integer> deptMap = new HashMap<>();
+        deptMap.put("HR", 5);
+        deptMap.put("ADMIN", 10);
+        deptMap.put("DEVELOPERS", 300);
+        return deptMap;
+    }
 
-		// Task: store department name and no of employees working in the department
-		HashMap<String, Integer> deptMap = new HashMap<String, Integer>();
-		deptMap.put("HR", 5);
-		deptMap.put("ADMIN", 10);
-		deptMap.put("DEVELOPERS", 300);
+    public static void main(String[] args) {
+        Map<String, Integer> deptMap = getDepartmentMap();
 
-		// Iterate
-		for (String deptName : deptMap.keySet()) {
-
-			Integer count = deptMap.get(deptName);
-			System.out.println("Department Name:" + deptName + " and Employee Count :" + count);
-
-		}
-
-	}
+        for (String deptName : deptMap.keySet()) {
+            Integer count = deptMap.get(deptName);
+            System.out.println("Department Name: " + deptName + " and Employee Count: " + count);
+        }
+    }
 }

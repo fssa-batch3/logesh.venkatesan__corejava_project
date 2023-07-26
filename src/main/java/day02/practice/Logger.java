@@ -1,28 +1,30 @@
 package day02.practice;
 
+
 public class Logger {
-	public static void debug (String msg) {
-		System.out.println("DEBUG: " + msg);
-	}
-	public static void info (String msg) {
-		// TODO complete this code using the above template
-		System.out.println("INFO: " + msg);
-	}
-	
-	public static void error (String msg) {
-		// TODO complete this code using the above 
-		System.out.println("ERROR: " + msg);
-	}
-	
-	// Similarly write overloaded methods for error and info.
-	public static void main(String[] args) {
-//		Logger l = new Logger();
-		Logger.debug("This is a Debug message");
-		Logger.info("This is an info message");
-		Logger.error("This is an error message");
-		
-	}
+    
+    public static void debug(String msg) {
+        System.out.println("DEBUG: " + msg);
+    }
+    
+    public static void info(String msg) {
+        System.out.println("INFO: " + msg);
+    }
+    
+    public static void error(String msg) {
+        System.err.println("ERROR: " + msg);
+    }
+    
+    public static void debug(int num) {
+        System.out.println("DEBUG: " + num);
+    }
+    
+    public static void info(int num) {
+        System.out.println("INFO: " + num);
+    }
+    
+    public static void error(int num) {
+        System.err.println("ERROR: " + num);
+    }
+    
 }
-
-
-

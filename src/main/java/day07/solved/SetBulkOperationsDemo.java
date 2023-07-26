@@ -1,9 +1,7 @@
 package day07.solved;
-
-import java.util.*;
-
+import java.util.HashSet;
+import java.util.Set;
 public class SetBulkOperationsDemo {
-
 	public static void main(String[] args) {
 
 		Set<Integer> s1 = new HashSet<Integer>();
@@ -17,11 +15,12 @@ public class SetBulkOperationsDemo {
 		s2.add(2);
 		s2.add(3);
 		s2.add(4);
-
+		
+		
 		Set<Integer> union = new HashSet<Integer>(s1);
 		union.addAll(s2);
 		System.out.println(union);
-
+		
 		// containsAll()
 		if (union.containsAll(s1))
 			System.out.println("All elements of s1 present in union");

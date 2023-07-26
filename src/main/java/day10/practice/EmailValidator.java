@@ -1,18 +1,10 @@
 package day10.practice;
 
-import java.util.regex.Pattern;
-
-
-class EmailValidator1 {
-	public static boolean isValidEmail(String emailId) throws InvalidEmailException {
-		// TODO Write your logic valid returns true else throw the above exception
-		// Also create the user defined exception mentioned in throws
-	}
+public class EmailValidator {
+    public static boolean isValidEmail(String emailId) throws InvalidEmailException {
+        if (emailId == null || !emailId.contains("@") || !emailId.endsWith(".com")) {
+            throw new InvalidEmailException("Invalid email address: " + emailId);
+        }
+        return true;
+    }
 }
-/*Use it to a method which read an email. If its invalid it should throw an `InvalidEmailException`*/
-
-	
-
-	
-
-

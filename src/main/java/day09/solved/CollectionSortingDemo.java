@@ -1,7 +1,6 @@
 package day09.solved;
 
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -11,8 +10,7 @@ public class CollectionSortingDemo {
 		cityNames.add("Delhi");
 		cityNames.add("Chennai");
 		cityNames.add("Bangalore");
-		
-		cityNames.add("@revet");
+
 		System.out.println("Before Sort:" + cityNames);
 		Collections.sort(cityNames);
 		System.out.println("After Sort:" + cityNames);

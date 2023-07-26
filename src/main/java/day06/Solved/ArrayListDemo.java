@@ -1,6 +1,12 @@
-package day06.Solved;
-import java.util.*;
+package day06.solved;
+
+
+
+import java.util.ArrayList;
+
+
 public class ArrayListDemo {
+
 
 	public static void main(String[] args) {
 
@@ -19,4 +25,5 @@ public class ArrayListDemo {
 		System.out.println(cityList);	// Use of toString method of 'Object' class
 
 	}
+
 }
